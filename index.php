@@ -1,20 +1,20 @@
 <?php
 $input = isset($_POST['text']) ? $_POST['text'] : 'Rad';
 $safeInput = htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
-function swedishOrdinal($number) {
-    $ordinals = [
-        1 => 'första',
-        2 => 'andra',
-        3 => 'tredje',
-        4 => 'fjärde',
-        5 => 'femte',
-        6 => 'sjätte',
-        7 => 'sjunde',
-        8 => 'åttonde',
-        9 => 'nionde',
-        10 => 'tionde'
+function etttvåtre($number) {
+    $text = [
+        1 => 'ett',
+        2 => 'två',
+        3 => 'tre',
+        4 => 'fyre',
+        5 => 'fem',
+        6 => 'sex',
+        7 => 'sju',
+        8 => 'åtta',
+        9 => 'nio',
+        10 => 'tio'
     ];
-    return $ordinals[$number] ?? $number;
+    return $text[$number] ?? $number;
 }
 ?>
 <!doctype html>
@@ -36,8 +36,8 @@ function swedishOrdinal($number) {
                 <?php
                 for ($i = 1; $i <= 10; $i++) {
                     echo '<div class="line">';
-                    echo '  <div class="num">Rad ' . swedishOrdinal($i) . '</div>';
-                    echo '  <div class="text">' . $safeInput . '   ' . swedishOrdinal($i) . '</div>';
+                    echo '  <div class="num">Rad ' . etttvåtre($i) . '</div>';
+                    echo '  <div class="text">' . $safeInput . '   ' . etttvåtre($i) . '</div>';
                     echo '</div>';
                 }
                 ?>
