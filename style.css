@@ -1,0 +1,74 @@
+body {
+  font-family: system-ui;
+  background: rgb(50, 50, 50);
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.allt {
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 520px;
+  width: 100%;
+}
+
+h1 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: blue;
+  color: rgb(234, 234, 234);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.svar {
+  margin-top: 8px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  outline: black 2px solid;
+}
+
+.num {
+  min-width: 36px;
+  text-align: center;
+  font-weight: 700;
+  padding: 6px 8px;
+  color: blue;
+}
+
+.text {
+  font-size: 16px;
+}
